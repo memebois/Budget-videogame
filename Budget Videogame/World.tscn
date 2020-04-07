@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://world/sword.png" type="Texture" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://Player/player.png" type="Texture" id=3]
+[ext_resource path="res://Player/Player.gd" type="Script" id=4]
 
 [node name="World" type="Node2D"]
 
@@ -16,6 +17,7 @@ texture = ExtResource( 2 )
 
 [node name="Player" type="KinematicBody2D" parent="."]
 position = Vector2( 38.0066, 88.7101 )
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
 }
